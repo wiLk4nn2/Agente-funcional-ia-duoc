@@ -11,7 +11,7 @@ ISY0101 — Ingeniería de Soluciones con IA.
 ## Requisitos previos
 
 - GitHub Codespaces (recomendado) o Python 3.12+
-- Variable de entorno "GITHUB_TOKEN" configurada. En otro entorno ejecuta: "export GITHUB_TOKEN=tu_token"
+- Variable "GITHUB_TOKEN" configurada. En otro entorno ejecuta: "export GITHUB_TOKEN="tu_token""
 
 ---
 
@@ -28,20 +28,19 @@ ISY0101 — Ingeniería de Soluciones con IA.
 
 ## Cómo ejecutar
 
-1. Abre el archivo `agente_duoc.ipynb` en Codespaces o Jupyter
-2. Ejecuta el bloque 1 para instalar dependencias
-3. Ejecuta el bloque 2 completo — esto realiza:
+1. Abre el archivo "agente-duoc.py"
+2. Ejecuta el codigo completo, esto realiza:
    - Carga y vectorización del Reglamento Académico en FAISS
    - Definición de herramientas del agente
    - Configuración de memoria con MemorySaver
    - Construcción del agente ReAct con LangGraph
    - Pruebas automáticas del sistema
 
-4. Para hacer tu propia consulta, modifica la última línea:
+4. Para hacer tu propia consulta, modifica cualquiera de las últimas líneas:
    print(consultar_agente("tu pregunta aquí"))
 
-> El agente mantiene memoria dentro de la misma sesión.
-> Para iniciar una nueva sesión, cambia el valor de thread_id.
+- El agente mantiene memoria dentro de la misma sesión.
+- Para iniciar una nueva sesión, cambia el valor de thread_id.
 
 ---
 
@@ -94,12 +93,3 @@ Este proyecto extiende el pipeline RAG desarrollado en la
 Evaluación Parcial 1. El vector store FAISS y el Reglamento
 Académico de DUOC UC son reutilizados directamente como
 memoria de largo plazo del agente.
-
----
-
-## Uso de Inteligencia Artificial
-
-Este proyecto fue desarrollado con apoyo de Claude AI para
-estructuración de código, resolución de errores de compatibilidad
-entre versiones de LangGraph y apoyo en redacción técnica. Decisiones de diseño, análisis y justificaciones
-son propias del autor.
